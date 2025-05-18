@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #0e042b;
+    text-align: center;
+}
+/*--header section--*/
+.header{
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    color: #fff;
+}
+.header__overlay{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color:#0006;
+    position: absolute;
+    z-index: 1;
+}
+body,nav,header,ul,h1,p{
+    box-sizing: border-box;
+}
+.header__item-container{
+    z-index: 10;
+    position: relative;
+    margin: 20px 0; /* Añadido margen arriba y abajo */
+    max-width: 90%; /* Ajustado para pantallas más pequeñas */
+    display: flex; /* Añadido para el diseño flexible */
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.header__item-container,p{
+text-wrap: pretty;
+}
+.estela{
+    min-height: 200px;
+    max-width: 90%; /* Ajustado para pantallas más pequeñas */
+    border-radius: 50%;
+    box-shadow:0 0 30px #ffffff48;
+    border: 3px solid white;
+    margin: 20px 0; /* Añadido margen arriba y abajo */
+}
+h1{
+    margin: 20px 0 0 0; /* Añadido margen arriba */
+    font-size: 24px; /* Reducido para dispositivos móviles */
+}
+/*--NAVBAR SECTION--*/
+.nav{
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #fff;
+    padding: 10px 0; /* Añadido padding arriba y abajo */
+}
+
+.nav__ul{
+    color: #b54bdf;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 0; /* Eliminado padding para evitar espacio extra */
+    margin: 0; /* Eliminado margen para evitar espacio extra */
+}
+
+.nav__item{
+list-style: none;
+margin: 5px 0; /* Añadido margen arriba y abajo */
+}
+
+.nav__link{
+color: #4a00aae1;
+text-decoration: none;
+display: inline-block;
+padding: 10px 20px; /* Aumentado el padding horizontal */
+margin: 5px 0;
+font-size: 18px; /* Reducido para dispositivos móviles */
+transition: background-color .3s, outline 0.3s, outline-offset 0.3s;
+border-radius: 20px;
+outline: 0;
+outline-offset: 0;
+width: 100%; /* Ancho completo para el contenedor padre */
+text-align: center; /* Centrar texto */
+}
+
+.nav__link:hover{
+    background-color: #ba3eda88;
+    border-radius: 20px;
+    outline: 2px solid rgba(0, 0, 0, 0.705);
+    outline-offset: -8px;
+}
+
+.link--log-in{
+    background-color: #b54bdf79;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: fit-content; /* Ajustar ancho al contenido */
+}
+
+.link--log-in:hover{
+    background-color: #bb3eda;
+    outline: none;
+}
+
+
+.lorem{
+    background-color: white;
+}
+
+.nav__logo{
+width: 100%; /* Ancho completo para el contenedor padre */
+max-width: 150px; /* Limitado el ancho de la imagen */
+margin: 20px auto; /* Centrado horizontalmente */
+}
+
+
+/*--cajas de infromacin--*/
+
+.box-list{
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para dispositivos móviles */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px; /* Añadido padding */
+}
+
+.box{
+    min-width: 90%; /* Ajustado para pantallas más pequeñas */
+    background-color: #ffffff;
+    margin: 20px 0; /* Añadido margen arriba y abajo */
+    padding: 20px;
+    outline: 4px solid #0c4bc0ce;
+    transition: margin-top .4s;
+    text-align: center; /* Centrar texto */
+}
+
+.box:hover{
+margin-top: 10px; /* Reducido el margen en hover para móviles */
+}
+
+.taitel{
+    color: #fff;
+    background-color: #0e042b;
+    padding: 10px;
+    font-size: 20px; /* Ajustado para móviles */
+    text-align: center;
+}
+
+.espasio{
+    width: 90%; /* Ajustado para pantallas más pequeñas */
+    max-width: 300px; /* Limitado el ancho de la imagen */
+    outline: 2px solid #ffffff;
+    box-shadow:  0 0 30px rgba(0, 0, 0, 0.61);
+    margin: 10px auto; /* Centrado horizontalmente */
+}
+
+.main{
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto; /* Centrado horizontalmente */
+    border-radius: 5px;
+    display: none; /* Oculto por defecto */
+    width: 90%; /* Ajustado para pantallas más pequeñas */
+    max-width: 400px; /* Ancho máximo */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Estirar elementos para que ocupen el ancho completo */
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Asegurar que el input ocupe el 100% del contenedor */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hacer que el botón ocupe el ancho completo */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: #0e042b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #b54bdf;
+    margin-top: 20px;
+}
+
+/* Estilos para pantallas más grandes (escritorio) */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header__item-container {
+        flex-direction: row;
+        max-width: 900px;
+    }
+    .estela {
+        max-width: 50%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav__ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav__item {
+        margin: 0 10px;
+    }
+    .nav__link {
+        width: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .box-list {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+    .box {
+        min-width: 300px;
+        margin: 50px;
+    }
+    .espasio {
+        width: 200px;
+        margin: 0 auto;
+    }
+    form {
+        width: 300px;
+    }
+    .input-container {
+        flex-direction: column;
+    }
+    button {
+        width: auto;
+    }
+}
