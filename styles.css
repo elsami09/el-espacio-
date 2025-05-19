@@ -237,7 +237,8 @@ button:hover {
         justify-content: space-around;
     }
     .header__item-container {
-        flex-direction: row;
+        flex-direction: column; /* Cambiado a columna para dispositivos de escritorio */
+        align-items: flex-start; /* Alinea los elementos a la izquierda por defecto */
         max-width: 900px;
     }
     .estela {
@@ -245,6 +246,12 @@ button:hover {
     }
     h1 {
         font-size: 30px;
+        margin-top: 20px; /* Añadido margen arriba para separar de la imagen en escritorio */
+        text-align: left; /* Alinea el texto a la izquierda en escritorio */
+    }
+    .text{
+        text-align: left;
+        width: 700px;
     }
     .nav {
         flex-direction: row;
