@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
         <div class="header__overlay"></div>
         <div class="header__item-container">
-            <img src="epico.jpg" alt="Imagen de una estela" class="estela">
+            <div class="box-estela">
+                            <img src="epico.jpg" alt="Imagen de una estela" class="estela">
+            </div>
             <h1>Contemplando la Majestuosidad del Universo</h1>
-            <p>La belleza del universo reside en sus formas intrincadas, sus colores vibrantes, sus fenómenos energéticos y la sensación de asombrosa inmensidad y misterio que evoca.</p>
+            <p class="text">La belleza del universo reside en sus formas intrincadas, sus colores vibrantes, sus fenómenos energéticos y la sensación de asombrosa inmensidad y misterio que evoca.</p>
         </div>
     </header>
     <nav class="nav">
         <ul class="nav__ul"> 
             <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
-            <li class="nav__item"><a href="#" class="nav__link link--log-in" id="login-button">Iniciar sesión</a></li>
+            <li class="nav__item"><a href="#Contacto" class="nav__link">Contacto</a></li>
+            <li class="nav__item"><a href="#email" class="nav__link link--log-in" id="login-button">Iniciar sesión</a></li>
         </ul>
         <div>
             <img src="fondo.jpg" alt="Logo del sitio" class="nav__logo">
         </div>
     </nav>
     <div class="box-list">
-        <div class="box">
+        <div class="box" id="Contacto">
             <img src="agujero-negro.jpg" alt="Imagen de un agujero negro" class="espasio">
             <h2 class="taitel">Los agujeros negros</h2>
             <p>Los agujeros negros son regiones del espacio-tiempo con una gravedad tan intensa que nada, ni siquiera la luz, puede escapar de su atracción. Se forman cuando estrellas masivas colapsan al final de sus vidas, o pueden existir como agujeros negros supermasivos en los centros de las galaxias. Están definidos por un horizonte de eventos, el punto de no retorno, y contienen una singularidad, donde la materia se comprime a densidad infinita. Aunque son invisibles, los agujeros negros pueden detectarse por sus efectos gravitacionales en la materia circundante y por la radiación que emiten al atraerla.</p>
@@ -60,7 +62,7 @@
         </div>
     </main>
     <footer class="footer">
-        <p>&copy; 2024 El espacio y su hermosura. Todos los derechos reservados.</p>
+        <p>&copy; 2029 El espacio y su hermosura. Todos los derechos reservados. oooooo</p>
     </footer>
     <script>
         const loginButton = document.getElementById('login-button');
